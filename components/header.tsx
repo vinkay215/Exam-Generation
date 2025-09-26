@@ -31,7 +31,7 @@ export function Header({ onNavigationChange, currentView = "home" }: HeaderProps
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleNavigation("home")}>
               <BookOpen className="h-6 w-6" />
-              <span className="text-xl font-semibold">ExamGen</span>
+              <span className="text-xl font-semibold">QuizKey</span>
             </div>
 
             <nav className="hidden md:flex items-center gap-6">
