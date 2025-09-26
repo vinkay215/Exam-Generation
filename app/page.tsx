@@ -105,7 +105,7 @@ export default function HomePage() {
       </main>
       <footer className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-6 py-4">
-          <div className="text-center text-sm text-muted-foreground">© 2025 nguyenquocvinh. All rights reserved.</div>
+          <div className="text-center text-sm text-muted-foreground">© 2025 . All rights reserved.</div>
         </div>
       </footer>
     </div>
