@@ -1,6 +1,6 @@
-# 🎓 v0-exam-generation-script
+# 🎓 Exam Generation
 
-![v0-exam-generation-script Banner](https://img.shields.io/badge/Exam%20Auto%20Generator-v0-blue?style=for-the-badge)
+![Exam-Generation Banner](https://img.shields.io/badge/Exam%20Auto%20Generator-v0-blue?style=for-the-badge)
 ![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-000?logo=vercel&style=for-the-badge)
 ![MongoDB Atlas](https://img.shields.io/badge/Database-MongoDB%20Atlas-47A248?logo=mongodb&style=for-the-badge)
 
@@ -8,7 +8,11 @@
 
 ## 📦 Giới thiệu
 
-**v0-exam-generation-script** là dự án giúp tạo đề thi tự động, triển khai nhanh trên Vercel, lưu trữ đề thi trên MongoDB Atlas, phù hợp cho giáo viên, trường học hay các tổ chức cần quản lý đề thi hiệu quả.
+**Exam-Generation** là dự án cá nhân mình xây dựng với mong muốn giúp giáo viên, trường học hay các đơn vị giáo dục có thể tạo đề thi tự động nhanh chóng, chuyên nghiệp, tiết kiệm thời gian. Dự án này còn giúp quản lý đề thi dễ dàng trên nền tảng cloud MongoDB Atlas và triển khai tức thì trên Vercel.
+
+> ⚡️ **Dự án vẫn đang hoàn thiện, nếu bạn phát hiện lỗi hoặc có ý tưởng hay, đừng ngần ngại góp ý hoặc tạo Issue để mình cải thiện hệ thống trở nên tuyệt vời hơn nhé!**
+>
+> ❤️ Mỗi lời góp ý, chia sẻ đều là động lực để mình xây dựng một sản phẩm hữu ích và đẹp hơn cho cộng đồng.
 
 ---
 
@@ -19,8 +23,6 @@
 3. **Lưu trữ & Quản lý:** Đề thi và lịch sử tạo đề được lưu trữ trên MongoDB Atlas.
 4. **Truy cập qua Web:** Toàn bộ thao tác thực hiện qua giao diện web được deploy trên Vercel, có thể sử dụng mọi nơi.
 
-![How it works](https://raw.githubusercontent.com/vinkay215/v0-exam-generation-script/main/assets/how-it-works.png)
-
 ---
 
 ## 🚀 Hướng dẫn triển khai trên Vercel
@@ -28,7 +30,7 @@
 ### 1. Fork hoặc clone dự án
 
 ```bash
-git clone https://github.com/vinkay215/v0-exam-generation-script.git
+git clone https://github.com/vinkay215/Exam-Generation.git
 ```
 
 ### 2. Tạo tài khoản [Vercel](https://vercel.com/signup) và đăng nhập.
@@ -113,10 +115,11 @@ Sau khi deploy thành công:
 
 ---
 
-## 📝 Liên hệ & Hỗ trợ
+## 📝 Liên hệ & Góp ý
 
 - Tác giả: [vinkay215](https://github.com/vinkay215)
-- Nếu có vấn đề, hãy tạo [issue](https://github.com/vinkay215/v0-exam-generation-script/issues) hoặc liên hệ qua GitHub.
+- Nếu bạn có góp ý, phát hiện lỗi hay muốn đóng góp, hãy tạo [issue](https://github.com/vinkay215/Exam-Generation/issues) hoặc liên hệ trực tiếp qua GitHub.
+- **Cảm ơn bạn đã quan tâm và sử dụng dự án. Hãy cùng mình xây dựng nên một ứng dụng ngày càng hoàn thiện và đẹp hơn!**
 
 ---
 
