@@ -1,4 +1,4 @@
-# 🎓 Exam-Generation
+# 🎓 Exam Generation
 
 ![Exam-Generation Banner](https://img.shields.io/badge/Exam%20Auto%20Generator-v0-blue?style=for-the-badge)
 ![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-000?logo=vercel&style=for-the-badge)
