@@ -99,6 +99,77 @@ MONGO_URI=mongodb+srv://your_user:your_pass@yourcluster.mongodb.net/yourdb?retry
 
 ---
 
+## 🛠️ Hướng dẫn sửa thông tin đăng nhập admin
+
+Thông tin tài khoản admin mặc định được khởi tạo khi hệ thống chạy lần đầu tiên.  
+Bạn có thể thay đổi thông tin đăng nhập admin trực tiếp trong source code tại file:
+
+**`lib/models/user.ts`**  
+Đường dẫn: [`@vinkay215/Exam-Generation/files/lib/models/user.ts`](https://github.com/vinkay215/Exam-Generation/blob/main/lib/models/user.ts)
+
+Trong file này, tìm đến hàm sau:
+
+```typescript
+static async initializeAdmin(): Promise<void> {
+  try {
+    const db = await this.safeGetDatabase()
+    const adminExists = await db.collection<User>(this.collection).findOne({ username: "Haiyen" })
+
+    if (!adminExists) {
+      const hashedPassword = await bcrypt.hash("Yen2025@", 12)
+      await db.collection(this.collection).insertOne({
+        username: "Haiyen",
+        email: "admin@examgenerator.com",
+        password: hashedPassword,
+        fullName: "Administrator",
+        role: "admin",
+        isActive: true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      })
+    }
+  } catch (error) {
+    // ...
+  }
+}
+```
+
+**Cách thay đổi thông tin đăng nhập admin:**
+
+- Đổi giá trị `username`, `email`, `password`, `fullName` theo mong muốn của bạn.
+- Ví dụ đổi mật khẩu:
+  ```typescript
+  const hashedPassword = await bcrypt.hash("MatKhauMoi123@", 12)
+  // ...
+  password: hashedPassword,
+  ```
+- Đổi email:
+  ```typescript
+  email: "admin@examgeneration.com", // sửa lại email mong muốn
+  ```
+- Sau khi sửa, bạn deploy lại để khởi tạo admin theo thông tin mới.
+
+**Lưu ý:**  
+- Nếu đã có admin trong database, hàm này sẽ không ghi đè. Nếu muốn cập nhật, bạn cần xóa bản ghi admin cũ trong MongoDB Atlas hoặc sửa trực tiếp trên database.
+- Đảm bảo mật khẩu đủ mạnh để bảo vệ tài khoản quản trị.
+
+---
+
+## 🛠️ Sửa tên dự án
+
+- Đổi tên repository trên GitHub thành `Exam-Generation`.
+- Sửa tiêu đề dự án trong file `README.md` thành `Exam-Generation`.
+- Sửa tên dự án ở các file cấu hình như `package.json`, `vercel.json`, hoặc `app.config.js` nếu có.
+- Ví dụ trong `package.json`:
+  ```json
+  {
+    "name": "Exam-Generation",
+    ...
+  }
+  ```
+
+---
+
 ## 📖 Sử dụng
 
 Sau khi deploy thành công:
