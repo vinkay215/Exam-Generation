@@ -6,6 +6,18 @@
 
 ---
 
+## 🌄 Preview
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vinkay215/Exam-Generation/25c9c77432aabbd8db470ae620356a9f6592860c/IMG/Preview.png" alt="Exam-Generation Preview" width="720"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vinkay215/Exam-Generation/blob/5b5f8acb6cf5c70f6da842b99acc5ae53f980ab3/IMG/Admin.png?raw=true" alt="Admin Panel Preview" width="360"/>
+  <img src="https://github.com/vinkay215/Exam-Generation/blob/5b5f8acb6cf5c70f6da842b99acc5ae53f980ab3/IMG/Database.png?raw=true" alt="Database Preview" width="360"/>
+</p>
+
+---
+
 ## 📦 Introduction
 
 **Exam-Generation** is a personal project developed to help teachers, schools, and educational organizations automatically generate exam papers quickly, professionally, and efficiently. The project also makes it easy to manage exams on MongoDB Atlas cloud platform and deploy instantly on Vercel.
